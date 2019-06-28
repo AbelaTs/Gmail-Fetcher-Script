@@ -52,8 +52,8 @@ public class GmailFetch {
         List<WebElement> NewEmail =  driver.findElement(By.className("Cp")).findElement(By.tagName("table")).findElements(By.className("zE"));
         System.out.println("New Emails :" + NewEmail.size());
         
-        for (int i = 0; i < NewEmail.size(); i++){
-            System.out.println("* Subject " + (i + 1) + ": " + NewEmail.get(i).findElement(By.className("y6")).getText());
+        for (int x = 0; x < NewEmail.size(); x++){
+            System.out.println("* Subject " + (x + 1) + ": " + NewEmail.get(x).findElement(By.className("y6")).getText());
         }
 
         String CurrentUrl = driver.getCurrentUrl();
