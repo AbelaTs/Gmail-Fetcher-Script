@@ -43,7 +43,7 @@ public class GmailFetch {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         
         
-       driver.findElement(By.name("password")).sendKeys("dad'sno@746657",Keys.ENTER);
+       driver.findElement(By.name("password")).sendKeys("###############",Keys.ENTER);
       
        //Wait for captcha
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -62,9 +62,10 @@ public class GmailFetch {
         System.out.println("URL: "+CurrentUrl);
         System.out.println("Source Code: "+PageSource);
 
-        //Wait
+      
         System.out.println();
         Verify(driver.getCurrentUrl(), gmailUrl, driver);
+          //Wait
          Thread.sleep(360000000);
 
         // Close the driver
